@@ -81,7 +81,7 @@ public class DogController
 
 
     // localhost:8080/dogs/dogtable
-    @GetMapping(value = "/dogtable",produces = {"application/json"})
+    @GetMapping(value = "/dogtable")
     public ModelAndView displayDogTable(HttpServletRequest request)
     {
         logger.trace(request.getRequestURI() + " accessed");

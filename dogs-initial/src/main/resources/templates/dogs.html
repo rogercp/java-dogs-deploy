@@ -1,17 +1,19 @@
-<html xmlns:th="http://thymeleaf.org">
+<html xmlns:th="http://thymeleaf.org" >
 <head>
     <meta charset="UTF-8" />
     <title>Display Dog Details</title>
 </head>
-<body>
+<body style="margin: 200px 200px">
 <table border="1">
     <tr>
         <th>Name</th>
         <th>Weight</th>
+        <th>Apt</th>
     </tr>
     <tr th:each="dog : ${dogList}">
-        <td th:text="${dog.name}">Name</td>
+        <td th:text="${dog.breed}">Breed</td>
         <td th:text="${dog.weight}">Weight</td>
+        <td th:text="${dog.apartmentSuitable}">Apt</td>
     </tr>
 </table>
 <strong><a href="/">Click here to go back</a></strong>
